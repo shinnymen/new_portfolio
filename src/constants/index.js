@@ -66,7 +66,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "React", "MongoDB", "Axios", "Tailwind", "Firebase"],
+    technologies: ["HTML", "CSS", "Angular", "React", "MongoDB"],
   },
   {
     title: "On The Road Website & App",

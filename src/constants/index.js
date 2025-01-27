@@ -61,6 +61,7 @@ export const PROJECTS = [
     description:
       "A modern platform designed for parents to register their children for coding courses. Once registered, parents are contacted to refine their specific requests. The platform offers flexibility with courses delivered either in-person in dedicated classrooms or online via video conferencing. Equipped with a secure authentication system, the website ensures a seamless registration process while maintaining a responsive and user-friendly experience. Built with React.js for the front-end and Node.js with MongoDB for the back-end, Kid Coding facilitates efficient communication and course management.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link: "https://meek-dodol-2a7f61.netlify.app/",
   },
   {
     title: "Interform Africa Website & Blog",
@@ -68,6 +69,7 @@ export const PROJECTS = [
     description:
       "A user-centric platform designed to help prospective students register for training programs while staying informed through an integrated blog section. The website features a secure authentication system for user account creation and login, ensuring personalized access to the platform's functionalities. Developed with a focus on responsiveness and scalability, the platform combines a modern front-end built with React.js and a robust back-end powered by Node.js and MongoDB. Interform Africa simplifies the enrollment process and keeps users engaged with up-to-date content.",
     technologies: ["HTML", "CSS", "Angular", "React", "MongoDB"],
+    link: "https://interformafrica.netlify.app/",
   },
   {
     title: "On The Road Website & App",

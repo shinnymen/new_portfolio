@@ -3,6 +3,8 @@ import project2 from "../assets/projects/project-5.png";
 import project3 from "../assets/projects/project-6.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-7.png";
+import project6 from "../assets/projects/project-8.png";
+import project7 from "../assets/projects/project-9.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. I also hold a Bachelor's degree in System and Network Administration, which has provided me with a strong foundation in infrastructure management and networking. Additionally, I have developed practical expertise in cybersecurity through platforms like Root Me, where I have sharpened my skills in ethical hacking, identifying system vulnerabilities, and implementing secure application designs. My goal is to leverage my diverse skill set to create innovative, secure, and impactful solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -55,6 +57,7 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  
   {
     title: "Kid Coding Website",
     image: project1,
@@ -92,6 +95,22 @@ export const PROJECTS = [
       "A dynamic e-commerce platform dedicated to empowering local businesses and connecting them with customers across Africa. During my internship, I contributed to the implementation of the front-end, ensuring a responsive and user-friendly interface. Built with modern web technologies, the platform offers features such as product browsing, user registration, and secure checkout. My work focused on delivering a seamless user experience by integrating interactive design components and optimizing the performance of the front-end. Afreecom.net bridges the gap between businesses and customers, fostering economic growth through accessible online shopping.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
     link: "https://afreecom.net",
+  },
+  {
+    title: "Webcraft Website",
+    image: project6,
+    description:
+      "IT company belonging to the Medor Diop Entreprises group. Created in 2023 in the Paris region, our goal is to become a key player in the development of web projects that positively impact our environment or aim to improve it.",
+    technologies: ["HTML", "CSS", "React.js", "Node.js", "MongoDB"],
+    link: "https://w3bcraft.netlify.app/",
+  },
+  {
+    title: "Ecommerce 'Jeund' Website",
+    image: project7,
+    description:
+      "My e-commerce website is a modern and responsive platform, built with React.js and Tailwind CSS, and integrated with AliExpress for automated dropshipping. It features a secure payment system (Stripe, PayPal), optimized user experience, and efficient order management. Designed for scalability, it offers a seamless shopping experience with no stock handling required.",
+    technologies: ["HTML", "CSS", "React.js", "Node.js", "MongoDB"],
+    link: "https://jeund.netlify.app/",
   },
 ];
 

@@ -102,7 +102,7 @@ export const PROJECTS = [
     description:
       "IT company belonging to the Medor Diop Entreprises group. Created in 2023 in the Paris region, our goal is to become a key player in the development of web projects that positively impact our environment or aim to improve it.",
     technologies: ["HTML", "CSS", "React.js", "Node.js", "MongoDB"],
-    link: "https://w3bcraft.com/",
+    link: "https://www.w3bcraft.com/",
   },
   {
     title: "Ecommerce 'Jeund' Website",

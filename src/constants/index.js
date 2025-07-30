@@ -7,6 +7,7 @@ import project6 from "../assets/projects/project-8.png";
 import project7 from "../assets/projects/project-9.png";
 import project8 from "../assets/projects/project-10.png";
 import project9 from "../assets/projects/project-11.png";
+import project10 from "../assets/projects/project-12.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. I also hold a Bachelor's degree in System and Network Administration, which has provided me with a strong foundation in infrastructure management and networking. Additionally, I have developed practical expertise in cybersecurity through platforms like Root Me, where I have sharpened my skills in ethical hacking, identifying system vulnerabilities, and implementing secure application designs. My goal is to leverage my diverse skill set to create innovative, secure, and impactful solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -130,6 +131,15 @@ export const PROJECTS = [
     technologies: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "JWT"],
     link: "https://weli.netlify.app/",
   },
+    {
+    title: "Toysosex – E-commerce Automatisé",
+    image: project10, 
+    description:
+      "Toysosex est une boutique en ligne spécialisée dans le bien-être intime, conçue avec React.js, Node.js et MongoDB. Le site intègre une solution de dropshipping automatisée avec AliExpress (import, images, vidéos, commandes), un système d’authentification sécurisé (JWT + Google OAuth), un back-office pour la gestion des produits, et un espace communautaire privé en développement. Paiements sécurisés via Stripe/PayPal.",
+    technologies: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "Cloudinary", "Puppeteer"],
+    link: "https://toysosex.fr/",
+  }
+
 ];
 
 export const CONTACT = {

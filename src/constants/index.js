@@ -5,6 +5,7 @@ import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-7.png";
 import project6 from "../assets/projects/project-8.png";
 import project7 from "../assets/projects/project-9.png";
+import project8 from "../assets/projects/project-10.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. I also hold a Bachelor's degree in System and Network Administration, which has provided me with a strong foundation in infrastructure management and networking. Additionally, I have developed practical expertise in cybersecurity through platforms like Root Me, where I have sharpened my skills in ethical hacking, identifying system vulnerabilities, and implementing secure application designs. My goal is to leverage my diverse skill set to create innovative, secure, and impactful solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -111,6 +112,14 @@ export const PROJECTS = [
       "My e-commerce website is a modern and responsive platform, built with React.js and Tailwind CSS, and integrated with AliExpress for automated dropshipping. It features a secure payment system (Stripe, PayPal), optimized user experience, and efficient order management. Designed for scalability, it offers a seamless shopping experience with no stock handling required.",
     technologies: ["HTML", "CSS", "React.js", "Node.js", "MongoDB"],
     link: "https://jeund.netlify.app/",
+  },
+  {
+    title: "Carte Restaurant + QR Code",
+    image: project8,
+    description:
+       "DjangoByMomCrêpe is a responsive e-commerce website built with React.js and Node.js, dedicated to selling homemade crêpes. It features a user-friendly interface, customizable orders, and real-time order tracking. The admin panel allows full control over the menu, orders, and content. Secure payments and dynamic UI ensure a smooth and modern experience.",
+    technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+    link: "https://www.djangobymomcrepes.com/",
   },
 ];
 

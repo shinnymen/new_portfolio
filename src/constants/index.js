@@ -75,7 +75,7 @@ export const PROJECTS = [
     description:
       "A user-centric platform designed to help prospective students register for training programs while staying informed through an integrated blog section. The website features a secure authentication system for user account creation and login, ensuring personalized access to the platform's functionalities. Developed with a focus on responsiveness and scalability, the platform combines a modern front-end built with React.js and a robust back-end powered by Node.js and MongoDB. Interform Africa simplifies the enrollment process and keeps users engaged with up-to-date content.",
     technologies: ["HTML", "CSS", "Angular", "React", "MongoDB"],
-    link: "https://interformafrica.netlify.app/",
+    link: "https://www.interformafrica.com/",
   },
   {
     title: "On The Road Website & App",

@@ -123,7 +123,7 @@ export const PROJECTS = [
     link: "https://www.djangobymomcrepes.com/",
   },
     {
-    title: "WELI – Mode & Accessoires",
+    title: "WELI – Mode & Accessoires - En cours",
     image: project9, 
     description:
       "WELI est une plateforme e-commerce moderne dédiée à la mode et aux accessoires, développée avec React.js et Node.js. L’interface soignée offre une navigation fluide, un moteur de recherche performant, un panier dynamique, et un système d’authentification sécurisé. Elle permet aux utilisateurs de découvrir des collections tendance, tandis que les vendeurs peuvent facilement y exposer leurs produits.",

@@ -127,7 +127,7 @@ export const PROJECTS = [
     title: "WELI – Mode & Accessoires - En cours",
     image: project9, 
     description:
-      "WELI est une plateforme e-commerce moderne dédiée à la mode et aux accessoires, développée avec React.js et Node.js. L’interface soignée offre une navigation fluide, un moteur de recherche performant, un panier dynamique, et un système d’authentification sécurisé. Elle permet aux utilisateurs de découvrir des collections tendance, tandis que les vendeurs peuvent facilement y exposer leurs produits.",
+      "WELI is a modern e-commerce platform dedicated to fashion and accessories, developed with React.js and Node.js. The polished interface offers smooth navigation, a powerful search engine, a dynamic shopping cart, and a secure authentication system. It allows users to explore trendy collections, while enabling sellers to easily showcase their products.",
     technologies: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "JWT"],
     link: "https://weli.netlify.app/",
   },
@@ -135,7 +135,7 @@ export const PROJECTS = [
     title: "Toysosex – E-commerce Automatisé",
     image: project10, 
     description:
-      "Toysosex est une boutique en ligne spécialisée dans le bien-être intime, conçue avec React.js, Node.js et MongoDB. Le site intègre une solution de dropshipping automatisée avec AliExpress (import, images, vidéos, commandes), un système d’authentification sécurisé (JWT + Google OAuth), un back-office pour la gestion des produits, et un espace communautaire privé en développement. Paiements sécurisés via Stripe/PayPal.",
+      "Toysosex is an online store specializing in intimate wellness, built with React.js, Node.js, and MongoDB. The site features an automated dropshipping solution with AliExpress (import, images, videos, orders), a secure authentication system (JWT + Google OAuth), a back-office for product management, and a private community space in development. Secure payments via Stripe/PayPal.",
     technologies: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "Cloudinary", "Puppeteer"],
     link: "https://toysosex.fr/",
   }

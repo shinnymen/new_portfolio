@@ -1,26 +1,80 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- ============================================ -->
+    <!-- BASE -->
+    <!-- ============================================ -->
+
     <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-    <title>Alexandre Medor | Full Stack Developer & Cybersecurity</title>
+    <!-- ============================================ -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- Remplace G-XXXXXXXXXX par ton vrai ID -->
+    <!-- ============================================ -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BDBDTRV6WY"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-BDBDTRV6WY");
+    </script>
+
+    <!-- ============================================ -->
+    <!-- SEO -->
+    <!-- ============================================ -->
+
+    <title>
+      Alexandre Medor | Full Stack Developer & Cybersecurity Engineer | Paris, France
+    </title>
 
     <meta
       name="description"
-      content="Portfolio of Alexandre Medor, Full Stack Developer specializing in React, Node.js, cybersecurity, data and real-time applications."
+      content="Portfolio of Alexandre Medor, Full Stack Developer and Cybersecurity Engineer based in the Paris region, France. React, React Native, Node.js, TypeScript, MongoDB, PostgreSQL, APIs, cybersecurity and real-time applications. Available for opportunities in France, Europe and remote worldwide."
     />
 
+    <meta
+      name="keywords"
+      content="Alexandre Medor, développeur full stack Paris, développeur React Paris, développeur Node.js Paris, développeur JavaScript Paris, développeur TypeScript Paris, développeur React Native Paris, ingénieur cybersécurité Paris, cybersecurity engineer Paris, full stack developer Paris, software developer Paris, web developer Paris, développeur web Île-de-France, développeur full stack Île-de-France, développeur informatique Paris, développeur full stack France, développeur web France, ingénieur informatique France, développeur React France, développeur Node.js France, cybersecurity France, full stack developer France, React developer France, Node.js developer France, software engineer France, remote full stack developer, remote software developer, remote developer Europe, full stack developer Europe, international software developer, React, React Native, Node.js, Express.js, TypeScript, JavaScript, MongoDB, PostgreSQL, REST API, Socket.IO, cybersecurity, Linux, Docker"
+    />
+
+    <meta
+      name="author"
+      content="Alexandre Medor"
+    />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <!-- ============================================ -->
     <!-- OPEN GRAPH / LINKEDIN -->
+    <!-- ============================================ -->
+
     <meta
       property="og:title"
-      content="Alexandre Medor | Full Stack Developer & Cybersecurity"
+      content="Alexandre Medor | Full Stack Developer & Cybersecurity Engineer"
     />
 
     <meta
       property="og:description"
-      content="Full Stack Developer specializing in React, Node.js, cybersecurity, data and real-time applications."
+      content="Full Stack Developer and Cybersecurity Engineer based in the Paris region, France. React, Node.js, TypeScript, mobile development, real-time systems and cybersecurity."
     />
 
     <meta
@@ -30,7 +84,7 @@
 
     <meta
       property="og:image:alt"
-      content="Alexandre Medor - Full Stack Developer & Cybersecurity Portfolio"
+      content="Alexandre Medor - Full Stack Developer and Cybersecurity Engineer Portfolio"
     />
 
     <meta
@@ -38,19 +92,33 @@
       content="https://agdmportfolio.netlify.app/"
     />
 
-    <meta property="og:type" content="website" />
+    <meta
+      property="og:type"
+      content="website"
+    />
 
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+
+    <!-- ============================================ -->
     <!-- TWITTER / X -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- ============================================ -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
 
     <meta
       name="twitter:title"
-      content="Alexandre Medor | Full Stack Developer & Cybersecurity"
+      content="Alexandre Medor | Full Stack Developer & Cybersecurity Engineer"
     />
 
     <meta
       name="twitter:description"
-      content="Full Stack Developer specializing in React, Node.js, cybersecurity, data and real-time applications."
+      content="Full Stack Developer and Cybersecurity Engineer based in the Paris region, France. Available for opportunities in France, Europe and remote worldwide."
     />
 
     <meta
@@ -60,26 +128,63 @@
 
   </head>
 
-    <body>
+  <body>
 
-      <form
-        name="contact"
-        netlify
-        netlify-honeypot="bot-field"
-        hidden
-      >
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <input type="text" name="company" />
-        <textarea name="message"></textarea>
-      </form>
+    <!-- ============================================ -->
+    <!-- FORMULAIRE CACHÉ NETLIFY -->
+    <!-- ============================================ -->
 
-      <div id="root"></div>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
 
-      <script
-        type="module"
-        src="/src/main.jsx"
-      ></script>
+      <input
+        type="hidden"
+        name="form-name"
+        value="contact"
+      />
 
-    </body>
+      <!-- ANTI-SPAM -->
+      <input
+        type="text"
+        name="bot-field"
+      />
+
+      <input
+        type="text"
+        name="name"
+      />
+
+      <input
+        type="email"
+        name="email"
+      />
+
+      <input
+        type="text"
+        name="company"
+      />
+
+      <textarea
+        name="message"
+      ></textarea>
+
+    </form>
+
+    <!-- ============================================ -->
+    <!-- REACT APPLICATION -->
+    <!-- ============================================ -->
+
+    <div id="root"></div>
+
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
+
+  </body>
 </html>

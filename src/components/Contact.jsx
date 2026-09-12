@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 import {
@@ -5,9 +6,46 @@ import {
   FaGithub,
   FaLinkedin,
   FaPaperPlane,
+  FaCheckCircle,
 } from "react-icons/fa";
 
 const Contact = () => {
+  const [status, setStatus] = useState("idle");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    setStatus("sending");
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setStatus("success");
+      form.reset();
+
+      // Efface le message de succès après 5 secondes
+      setTimeout(() => {
+        setStatus("idle");
+      }, 5000);
+    } catch (error) {
+      console.error("Contact form error:", error);
+      setStatus("error");
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -32,6 +70,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.3 }}
+          whileHover={{ y: -5 }}
           className="group relative w-full max-w-md overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/30 p-8 backdrop-blur-sm"
         >
           {/* GLOW */}
@@ -58,25 +97,28 @@ const Contact = () => {
 
               <a
                 href={`mailto:${CONTACT.email}`}
-                className="text-stone-300 transition-colors hover:text-white"
+                className="break-all text-stone-300 transition-colors hover:text-white"
               >
                 {CONTACT.email}
               </a>
             </div>
 
             {/* LOCATION */}
-            <p className="mb-3 text-stone-400">
-              {CONTACT.address}
-            </p>
+            {CONTACT.address && (
+              <p className="mb-3 text-stone-400">
+                {CONTACT.address}
+              </p>
+            )}
 
             {/* PHONE */}
-            <p className="mb-8 text-stone-400">
-              {CONTACT.phoneNo}
-            </p>
+            {CONTACT.phoneNo && (
+              <p className="mb-8 text-stone-400">
+                {CONTACT.phoneNo}
+              </p>
+            )}
 
             {/* SOCIAL NETWORKS */}
             <div className="flex gap-6">
-
               <motion.a
                 href="TON_LINKEDIN"
                 target="_blank"
@@ -100,7 +142,6 @@ const Contact = () => {
               >
                 <FaGithub />
               </motion.a>
-
             </div>
           </div>
         </motion.div>
@@ -111,6 +152,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false, amount: 0.3 }}
+          whileHover={{ y: -5 }}
           className="group relative w-full max-w-xl overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/30 p-8 backdrop-blur-sm"
         >
           {/* GLOW */}
@@ -122,7 +164,6 @@ const Contact = () => {
           />
 
           <div className="relative z-10">
-
             <h3 className="mb-6 text-2xl font-semibold">
               Send me a message
             </h3>
@@ -131,9 +172,10 @@ const Contact = () => {
               name="contact"
               method="POST"
               data-netlify="true"
+              onSubmit={handleSubmit}
               className="space-y-5"
             >
-              {/* NETLIFY */}
+              {/* NETLIFY FORM NAME */}
               <input
                 type="hidden"
                 name="form-name"
@@ -215,17 +257,51 @@ const Contact = () => {
                 />
               </div>
 
-              {/* SUBMIT */}
+              {/* SUCCESS MESSAGE */}
+              {status === "success" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="flex items-center justify-center gap-2 rounded-xl border border-green-900 bg-green-950/30 p-3 text-green-400"
+                >
+                  <FaCheckCircle />
+                  Message sent successfully!
+                </motion.div>
+              )}
+
+              {/* ERROR MESSAGE */}
+              {status === "error" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="rounded-xl border border-red-900 bg-red-950/30 p-3 text-center text-red-400"
+                >
+                  Something went wrong. Please try again.
+                </motion.div>
+              )}
+
+              {/* SUBMIT BUTTON */}
               <motion.button
                 type="submit"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="flex w-full items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 font-medium text-stone-900 transition-colors hover:bg-stone-200"
+                disabled={status === "sending"}
+                whileHover={
+                  status !== "sending"
+                    ? { scale: 1.03 }
+                    : {}
+                }
+                whileTap={
+                  status !== "sending"
+                    ? { scale: 0.97 }
+                    : {}
+                }
+                className="flex w-full items-center justify-center gap-3 rounded-xl bg-white px-6 py-3 font-medium text-stone-900 transition-colors hover:bg-stone-200 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <FaPaperPlane />
-                Send Message
-              </motion.button>
 
+                {status === "sending"
+                  ? "Sending..."
+                  : "Send Message"}
+              </motion.button>
             </form>
           </div>
         </motion.div>

@@ -1,36 +1,53 @@
 import React from "react";
 import profilePic from "../assets/WhatsApp Image 2025-01-26 at 14.02.59.jpeg";
-import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 
 const Hero = () => {
+  const { language } = useLanguage();
+
+  const content = {
+    en: {
+      intro: "Full Stack • Cybersecurity • Data",
+      title1: "Cybersecurity & Data Engineer",
+      title2: "Full Stack Developer",
+      rootme: "Root-Me • 1,695 pts • 106 challenges",
+      description:
+        "I am a Full Stack Developer and IT Engineer with 5 years of experience building modern web, mobile, and real-time applications. I work across the entire development stack, from front-end interfaces with React, Next.js, and React Native to scalable back-end systems using Node.js, Express, TypeScript, MongoDB, PostgreSQL, and REST APIs. I have designed and developed complete platforms involving real-time communication, geolocation, secure payments, authentication, cloud services, and automated systems. Alongside software development, I hold a degree in Systems and Network Administration, giving me a strong understanding of infrastructure, Linux environments, networking, virtualization, and system security. I also have practical experience in cybersecurity, including vulnerability analysis, security auditing, secure application design, and technologies based on NIST principles. My recent projects include a complete ride-hailing platform, a digital art marketplace, and an automated cryptocurrency trading system using real-time market data. I enjoy solving complex technical problems and building secure, scalable, and reliable products from concept to production.",
+      downloadResume: "Download Resume",
+      viewProjects: "View Projects →",
+    },
+
+    fr: {
+      intro: "Full Stack • Cybersécurité • Data",
+      title1: "Ingénieur Cybersécurité & Data",
+      title2: "Développeur Full Stack",
+      rootme: "Root-Me • 1 695 pts • 106 challenges",
+      description:
+        "Je suis développeur Full Stack et ingénieur informatique avec 5 ans d’expérience dans la création d’applications web, mobiles et temps réel. J’interviens sur l’ensemble de la stack, des interfaces front-end avec React, Next.js et React Native aux systèmes back-end avec Node.js, Express, TypeScript, MongoDB, PostgreSQL et les API REST. J’ai conçu et développé des plateformes complètes intégrant communication temps réel, géolocalisation, paiements sécurisés, authentification, services cloud et systèmes automatisés. En parallèle du développement logiciel, je suis diplômé en administration systèmes et réseaux, avec de solides compétences en infrastructure, environnements Linux, réseaux, virtualisation et sécurité des systèmes. J’ai également une expérience pratique en cybersécurité, notamment en analyse de vulnérabilités, audit de sécurité et conception d’applications sécurisées. Mes projets récents comprennent une plateforme VTC complète, une plateforme dédiée à l’art numérique ainsi qu’un système automatisé de trading de cryptomonnaies utilisant des données de marché en temps réel. J’apprécie particulièrement résoudre des problématiques techniques complexes et concevoir des produits sécurisés, évolutifs et fiables.",
+      downloadResume: "Télécharger mon CV",
+      viewProjects: "Voir mes projets →",
+    },
+  };
+
+  const t = content[language];
+
   return (
     <div className="pb-10 lg:mb-28">
-
       <div className="flex flex-wrap items-center lg:flex-row-reverse">
 
         {/* ================= PHOTO ================= */}
         <motion.div
-          initial={{
-            opacity: 0,
-            x: 100,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
           viewport={{
             once: false,
             amount: 0.3,
           }}
           className="w-full lg:w-1/2"
         >
-
           <div className="flex justify-center lg:p-8">
-
             <motion.div
               whileHover={{
                 y: -8,
@@ -55,18 +72,11 @@ const Hero = () => {
                 hover:shadow-2xl
               "
             >
-
               {/* GLOW */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                }}
-                whileHover={{
-                  opacity: 1,
-                }}
-                transition={{
-                  duration: 0.3,
-                }}
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
                 className="
                   pointer-events-none
                   absolute
@@ -85,12 +95,8 @@ const Hero = () => {
                 alt="Alexandre Medor"
                 width={350}
                 height={350}
-                whileHover={{
-                  scale: 1.03,
-                }}
-                transition={{
-                  duration: 0.4,
-                }}
+                whileHover={{ scale: 1.03 }}
+                transition={{ duration: 0.4 }}
                 className="
                   relative
                   z-10
@@ -100,31 +106,21 @@ const Hero = () => {
                   object-cover
                 "
               />
-
             </motion.div>
           </div>
         </motion.div>
 
         {/* ================= CONTENT ================= */}
         <motion.div
-          initial={{
-            opacity: 0,
-            x: -100,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
           viewport={{
             once: false,
             amount: 0.25,
           }}
           className="w-full lg:w-1/2"
         >
-
           <div
             className="
               mt-10
@@ -166,7 +162,7 @@ const Hero = () => {
                 text-stone-300
               "
             >
-              Full Stack • Cybersecurity • Data
+              {t.intro}
             </motion.span>
 
             {/* NAME */}
@@ -233,8 +229,8 @@ const Hero = () => {
                 lg:text-3xl
               "
             >
-              <p>Cybersecurity & Data Engineer</p>
-              <p>Full Stack Developer</p>
+              <p>{t.title1}</p>
+              <p>{t.title2}</p>
             </motion.div>
 
             {/* ROOT-ME BADGE */}
@@ -271,7 +267,7 @@ const Hero = () => {
                 text-stone-300
               "
             >
-              Root-Me • 1,695 pts • 106 challenges
+              {t.rootme}
             </motion.div>
 
             {/* DESCRIPTION */}
@@ -302,7 +298,7 @@ const Hero = () => {
                 lg:text-left
               "
             >
-              {HERO_CONTENT}
+              {t.description}
             </motion.p>
 
             {/* ACTIONS */}
@@ -361,7 +357,7 @@ const Hero = () => {
                   hover:shadow-xl
                 "
               >
-                Download Resume
+                {t.downloadResume}
               </motion.a>
 
               {/* SECONDARY BUTTON */}
@@ -388,14 +384,12 @@ const Hero = () => {
                   hover:text-white
                 "
               >
-                View Projects →
+                {t.viewProjects}
               </motion.a>
 
             </motion.div>
-
           </div>
         </motion.div>
-
       </div>
     </div>
   );

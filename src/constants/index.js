@@ -164,7 +164,7 @@ export const PROJECTS = [
     description:
       "IT company belonging to the Medor Diop Entreprises group. Created in 2023 in the Paris region, our goal is to become a key player in the development of web projects that positively impact our environment or aim to improve it.",
     technologies: ["HTML", "CSS", "React.js", "Node.js", "MongoDB"],
-    link: "https://www.w3bcraft.com/",
+    link: "https://w3bcraft.netlify.app/",
   },
   {
     title: "Ecommerce 'Jeund' Website",
@@ -196,7 +196,7 @@ export const PROJECTS = [
     description:
       "Toysosex is an online store specializing in intimate wellness, built with React.js, Node.js, and MongoDB. The site features an automated dropshipping solution with AliExpress (import, images, videos, orders), a secure authentication system (JWT + Google OAuth), a back-office for product management, and a private community space in development. Secure payments via Stripe/PayPal.",
     technologies: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Express", "Cloudinary", "Puppeteer"],
-    link: "https://toysosex.fr/",
+    link: "https://sextoyzfront.netlify.app/",
   }
 
 ];

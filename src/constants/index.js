@@ -8,6 +8,9 @@ import project7 from "../assets/projects/project-9.png";
 import project8 from "../assets/projects/project-10.png";
 import project9 from "../assets/projects/project-11.png";
 import project10 from "../assets/projects/project-12.png";
+import project11 from "../assets/projects/project-13.jpg";
+import project12 from "../assets/projects/project-14.png";
+import project13 from "../assets/projects/project-15.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. I also hold a Bachelor's degree in System and Network Administration, which has provided me with a strong foundation in infrastructure management and networking. Additionally, I have developed practical expertise in cybersecurity through platforms like Root Me, where I have sharpened my skills in ethical hacking, identifying system vulnerabilities, and implementing secure application designs. My goal is to leverage my diverse skill set to create innovative, secure, and impactful solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -61,6 +64,62 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   
+  {
+  title: "Dieli – VTC Platform",
+  image: project12,
+  description:
+    "A complete ride-hailing platform developed for both passengers and professional drivers. Dieli includes two React Native mobile applications, a Node.js backend, a web administration dashboard and a public website. The platform supports instant and scheduled rides, real-time driver geolocation, intelligent driver matching, favorite drivers, dynamic pricing and secure payment authorization and capture with Stripe. Real-time ride updates and driver availability are handled through Socket.IO, while MongoDB manages users, rides, pricing rules and operational data.",
+  technologies: [
+    "React Native",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Socket.IO",
+    "Stripe",
+    "JWT",
+    "REST API",
+    "Geolocation"
+  ],
+  link: "https://dieli.fr/",
+},{
+  title: "Automated Crypto Trading Bot – JTO",
+  image: project11,
+  description:
+    "An automated cryptocurrency trading system designed to analyze the JTO market in real time and execute trading strategies based on live market data. The bot monitors bid/ask prices, spread, portfolio value and market movements through a real-time ticker. It includes a paper-trading engine for strategy testing without financial risk, automated position management, profit and loss tracking, and a live monitoring dashboard. The architecture was designed to evolve toward multiple trading strategies and a SaaS model.",
+  technologies: [
+    "JavaScript",
+    "Node.js",
+    "REST API",
+    "WebSocket",
+    "Trading API",
+    "Real-Time Data",
+    "Algorithmic Trading",
+    "Paper Trading"
+  ],
+  // link: "TON_LIEN_GITHUB_ICI",
+},
+{
+  title: "Kalosium – Digital Art Platform",
+  image: project13,
+  description:
+    "A full-stack digital art platform designed to connect artists, collectors and art enthusiasts. The application features secure user authentication, role-based access, artwork management, bidding, private messaging and an administration system. Images are uploaded directly to Cloudinary using secure backend-generated signatures, while artwork metadata and user data are stored in MongoDB Atlas. The platform is built with a React/Vite front-end and a Node.js/TypeScript REST API architecture.",
+  technologies: [
+    "React.js",
+    "Vite",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MongoDB Atlas",
+    "Mongoose",
+    "JWT",
+    "Cloudinary",
+    "REST API",
+    "Heroku"
+  ],
+  link: "https://etheralafricart.netlify.app/",
+},
   {
     title: "Kid Coding Website",
     image: project1,

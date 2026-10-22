@@ -59,7 +59,7 @@ Je continue de développer mes compétences à travers Root-Me, des laboratoires
 
 export const EXPERIENCES = [
   {
-    year: "2024 - 2026",
+    year: "2024 - Present",
     role: "Cloud & Cybersecurity Consultant",
     roleFr: "Consultant Cloud & Cybersécurité",
     company: "FENIA",
@@ -91,7 +91,7 @@ export const EXPERIENCES = [
   },
 
   {
-    year: "2022 - 2024",
+    year: "2021 - 2023",
     role: "Cybersecurity Consultant",
     roleFr: "Consultant Cybersécurité",
     company: "SkyStacks",
@@ -122,7 +122,7 @@ export const EXPERIENCES = [
   },
 
   {
-    year: "2023 - 2024",
+    year: "2017 - 2024",
     role: "Cybersecurity Analyst",
     roleFr: "Analyste Cybersécurité",
     company: "ASERO Worldwide",
@@ -145,7 +145,7 @@ export const EXPERIENCES = [
   },
 
   {
-    year: "2023 - 2024",
+    year: "2021 - 2022",
     role: "Systems & Network Security",
     roleFr: "Sécurité Systèmes & Réseaux",
     company: "Tysta Networks",
@@ -169,7 +169,7 @@ export const EXPERIENCES = [
   },
 
   {
-    year: "Sept - Oct 2024",
+    year: "Oct 2024",
     role: "Infrastructure Security Administrator",
     roleFr: "Administrateur Sécurité Infrastructure",
     company: "DIRISI (French Armed Forces)",
@@ -612,7 +612,7 @@ export const CYBERSECURITY_SKILLS = [
 
 export const EDUCATION = [
   {
-    year: "2024 - 2026",
+    year: "2017",
     institution: "Université Paris 8",
     degree: "Master Cybersecurity and Data Science",
     degreeFr: "Master Cybersécurité et Data Science",
@@ -630,13 +630,13 @@ export const EDUCATION = [
     degreeFr: "Piscine 42 – Bootcamp intensif de programmation",
   },
   {
-    year: "2023 - 2024",
+    year: "2015",
     institution: "Université de Versailles Saint-Quentin-en-Yvelines",
     degree: "Bachelor Systems & Network Administration – Cybersecurity",
     degreeFr: "Bachelor Administration Systèmes & Réseaux – Option Cybersécurité",
   },
   {
-    year: "2020 - 2021",
+    year: "2013",
     institution: "WebForce 3",
     degree: "BAC+2 Web & Mobile Application Development",
     degreeFr: "BAC+2 Développement Web & Applications Mobiles",

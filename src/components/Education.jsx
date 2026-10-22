@@ -19,7 +19,7 @@ const EDUCATION = [
     titleFr: "Master en Cybersécurité et Data Science",
 
     school: "Université Paris 8",
-    date: "2024 – 2026",
+    date: "2017",
     logo: paris8Logo,
 
     description:
@@ -37,7 +37,7 @@ const EDUCATION = [
       "Licence en Administration Systèmes et Réseaux – Option Cybersécurité",
 
     school: "Université de Versailles Saint-Quentin",
-    date: "2023 – 2024",
+    date: "2015",
     logo: uvsqLogo,
 
     description:
@@ -54,7 +54,7 @@ const EDUCATION = [
       "Diplôme BAC+2 en Développement Web Full Stack",
 
     school: "WebForce3",
-    date: "2021",
+    date: "2013",
 
     description:
       "Professional degree in Full Stack Web Development covering front-end and back-end development, databases, APIs, responsive web applications and modern web development practices.",
@@ -63,22 +63,7 @@ const EDUCATION = [
       "Formation professionnelle en développement Web Full Stack couvrant le développement front-end et back-end, les bases de données, les API, les applications web responsive et les pratiques modernes du développement web.",
   },
 
-  {
-    title:
-      "BTS in Management of Commercial Units – Marketing Option",
-
-    titleFr:
-      "BTS Management des Unités Commerciales – Option Marketing",
-
-    school: "EPSECO Périgueux",
-    date: "2011 – 2013",
-
-    description:
-      "Higher technical diploma focused on business management, sales, customer relations and marketing.",
-
-    descriptionFr:
-      "Diplôme supérieur axé sur la gestion commerciale, la vente, la relation client et le marketing.",
-  },
+  
 ];
 
 const CERTIFICATIONS = [
